@@ -11,9 +11,9 @@ namespace Curso.Data {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer("Server=localhost\\SQLEXPRESS;Database=CursoEFCore;Trusted_Connection=True;persist security info=True;MultipleActiveResultSets=True;")
-            // .EnableSensitiveDataLogging()
-            // .LogTo(Console.WriteLine, LogLevel.Information);
-            ;
+            // .UseLazyLoadingProxies()
+            .EnableSensitiveDataLogging()
+            .LogTo(Console.WriteLine, LogLevel.Information);
         }
 
         public DbSet<Funcionario> Funcionarios { get; set; }
