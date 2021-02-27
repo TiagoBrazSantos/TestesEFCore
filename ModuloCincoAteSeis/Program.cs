@@ -1,8 +1,4 @@
-﻿using System;
-using System.Linq;
-using Curso.Modulos;
-using Microsoft.Data.SqlClient;
-using Microsoft.EntityFrameworkCore;
+﻿using Curso.Modulos;
 
 namespace EstudosEFCore
 {
